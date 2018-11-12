@@ -1,6 +1,0 @@
-1. The file format used is elf64-x86-64 for the i386:x86-64 architecture.
-2. Some of the section names are .interp, .init, .dynstr, .text, .fini etc.
-   There are a total of 30 sections for this program.
-3. The main function is in the .text section and is at address 0x4007bd.
-4. The stack and heap are allocated at runtime so they are not pre-determined
-   in the executable.  There are no stack or heap segments.
