@@ -1,0 +1,20 @@
+TESTING INSTRUCTIONS:
+
+To run the tests we provided you, type './run_sanity_check.sh' from your project folder.
+This will copy your alu.circ and regfile.circ into the 'tests' folder and then run the tests.
+
+To see what happened during a test, you can go to tests and open the .circ files.
+These are harnesses that are modified to have testing inputs in them. 
+You can tick the clock and see the outputs of your ALU, and compare them to what you would expect.
+
+To make your own tests, type 'python alu_test_creator.py' from your project folder.
+This will output a .X, .Y, .S, and .out files in your 'tests' folder.
+Open your alu harness, and save it under a new name. 
+Right-click on each memory element and click "Load Image...", and then select the appropriate file.
+Load your .X file into the first, your .Y file into the second, and your .S file into the 3rd.
+You can now step through your test interactively and see the output.
+
+To run your test in an automated fashion, copy the last line outputted by the test-creator and paste
+it into the file called tests/sanity_test.py in the list called 'tests' at the bottom of the file. 
+You have now added your test to the staff tests! If you run the sanity check again, your test will now be run as well! 
+
